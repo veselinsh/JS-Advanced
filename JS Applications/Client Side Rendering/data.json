@@ -1,0 +1,23 @@
+[
+    {
+        "title": "First Article",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ",
+        "author": "John Peterson",
+        "comments": []
+    },
+    {
+        "title": "Second Article",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ",
+        "author": "Peter Johnson",
+        "comments": []
+
+    },
+    {
+        "title": "Third Article",
+        "description": "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ",
+        "author": "Marie Jackson",
+        "comments": []
+
+    }
+
+]

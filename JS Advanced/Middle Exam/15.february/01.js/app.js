@@ -1,0 +1,45 @@
+function solution() {
+    const [gifts, sent, discarded] = document.querySelectorAll('section ul');
+    const input = document.querySelector('input');
+    document.querySelector('div button').addEventListener('click', addGift);
+    function addGift() {
+        const name = input.value;
+        input.value = '';
+        const element = e('li', name, 'gift');
+        const sendBtn = e('button', 'Send', 'sendButton');
+        const discardBtn = e('button', 'Discard', 'discardButton');
+        element.appendChild(sendBtn);
+        element.appendChild(discardBtn);
+        gifts.appendChild(element);
+        sendBtn.addEventListener('click', () => sendGift(name, element));
+        discardBtn.addEventListener('click', () => discardGift(name, element));
+        sortGift();
+    }
+    function sendGift(name, gift) {
+        gift.remove();
+        const element = e('li', name, 'gift');
+        sent.appendChild(element);
+
+    }
+    function discardGift(name, gift) {
+        gift.remove();
+        const element = e('li', name, 'gift');
+        discarded.appendChild(element);
+    }
+    function sortGift() {
+        Array
+            .from(gifts.children)
+            .sort((a, b) => a.childNodes[0].textContent.localeCompare(b.childNodes[0].textContent))
+            .forEach(g => gifts.appendChild(g));
+    }
+    function e(type, content, className) {
+        const result = document.createElement(type);
+        result.textContent = content;
+
+        if (className) {
+            result.className = className;
+        }
+        return result;
+    }
+}
+

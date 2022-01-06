@@ -1,0 +1,39 @@
+body {
+    background: #F4F1F5;
+    margin: 0;
+    padding: 2rem 12rem;
+    font-family: 'Helvetica',sans-serif                         ;
+}
+header  > p{
+    color: #F9690E;
+    float: left;
+}
+nav {
+    text-align: right;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0px 8px ;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #F9690E;
+    
+}
+main > section{
+    background-image: url('/picture.jpg');
+    margin-top: 3rem;
+    background-size: cover;
+    background-position: center ;
+    padding: 17rem;
+}
+main section h1{
+    color: #F4F1F5;
+}
+main section h1 span{
+    color: #F9690E;
+}
+main sectio

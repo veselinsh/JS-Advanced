@@ -1,0 +1,15 @@
+{
+  "name": "07.unit-testing.exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "char-test.js",
+  "scripts": {
+    "test": "char-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4"
+  }
+}
